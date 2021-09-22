@@ -30,6 +30,8 @@ b1.pack(side = TOP, expand = True, fill = BOTH)
 b2 = Button(pane, text = "QUIT", background = "#EE5D5D", fg = "white", command = quit)
 b2.pack(side = TOP, expand = True, fill = BOTH)
 
+#Prints message upon activation
+print("Thanks for using the Foxtrot button! I love you!")
+
 #Execute Tkinter
 master.mainloop() 
-
