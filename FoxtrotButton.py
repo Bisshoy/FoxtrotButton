@@ -3,20 +3,13 @@ import webbrowser
 
 def open_page():
     webbrowser.open("https://www.gocomics.com/random/foxtrot/") 
+    
+print("Thank you for using the Foxtrot button! I love you!")
 
 #Creates Tk window
 master = Tk()
-master.title("Foxtrot Button!")
 master.geometry("500x250")
-
-#Centers Tk window 
-h = master.winfo_reqheight()
-w = master.winfo_reqwidth()
-hs = master.winfo_screenheight()
-ws = master.winfo_screenwidth()
-y = (hs/2) - (h/2)
-x = (ws/2) - (w/2)
-master.geometry('+%d+%d' % (x, y))
+master.title("Foxtrot Button!")
 
 #Creates a Frame which can expand according to the size of the window
 pane = Frame(master)
@@ -30,8 +23,5 @@ b1.pack(side = TOP, expand = True, fill = BOTH)
 b2 = Button(pane, text = "QUIT", background = "#EE5D5D", fg = "white", command = quit)
 b2.pack(side = TOP, expand = True, fill = BOTH)
 
-#Prints message upon activation
-print("Thanks for using the Foxtrot button! I love you!")
-
 #Execute Tkinter
-master.mainloop() 
+master.mainloop()
