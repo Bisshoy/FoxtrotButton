@@ -2,7 +2,7 @@ from tkinter import *
 import webbrowser
 
 def open_page():
-    webbrowser.open("https://www.gocomics.com/foxtrot/2003/10/03")
+    webbrowser.open("https://www.gocomics.com/random/foxtrot/") 
 
 #Creates Tk window
 master = Tk()
