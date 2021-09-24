@@ -3,7 +3,7 @@ import webbrowser
 
 def open_page():
     webbrowser.open("https://www.gocomics.com/random/foxtrot/") 
-    
+
 print("Thank you for using the Foxtrot button! I love you!")
 
 #Creates Tk window
@@ -16,12 +16,13 @@ pane = Frame(master)
 pane.pack(fill = BOTH, expand = True)
 
 #Button 1
-b1 = Button(pane, text = "Click me for Foxtrot!", background = "#33D5FF", activebackground = "#F6E277", fg = "black", command = open_page)
+b1 = Button(pane, text = "Click me for Foxtrot!", background = "#33D5FF", activebackground = "#F6E277", fg = "black", font = ("Arial", 25), command = open_page)
 b1.pack(side = TOP, expand = True, fill = BOTH)
 
 #Button 2
 b2 = Button(pane, text = "QUIT", background = "#EE5D5D", activebackground = "#F6E277", fg = "white", command = quit)
-b2.pack(side = TOP, expand = True, fill = BOTH)
+b2.pack(side = TOP, expand = False, fill = BOTH) #TURN EXPAND TO TRUE TO EVEN OUT BUTTONS 
 
 #Execute Tkinter
 master.mainloop()
+
