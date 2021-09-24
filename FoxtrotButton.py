@@ -16,7 +16,7 @@ pane = Frame(master)
 pane.pack(fill = BOTH, expand = True)
 
 #Button 1
-b1 = Button(pane, text = "Click me for Foxtrot!", background = "#33D5FF", activebackground = "#F6E277", fg = "black", font = ("Arial", 25), command = open_page)
+b1 = Button(pane, text = "Click me for Foxtrot!", background = "#33D5FF", activebackground = "#F6E277", fg = "black", font = ("Arial", 35), command = open_page)
 b1.pack(side = TOP, expand = True, fill = BOTH)
 
 #Button 2
