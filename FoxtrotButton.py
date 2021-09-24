@@ -8,7 +8,7 @@ print("Thank you for using the Foxtrot button! I love you!")
 
 #Creates Tk window
 master = Tk()
-master.geometry("500x250")
+master.geometry("500x250+700+300")
 master.title("Foxtrot Button!")
 
 #Creates a Frame which can expand according to the size of the window
